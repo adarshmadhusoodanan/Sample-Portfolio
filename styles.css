@@ -1,0 +1,188 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links li{
+    margin-left: 20px;
+
+}
+.nav-links a{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-decoration: none;
+}
+.search-container{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.search-container input{
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+.search-container button {
+    padding: 5px 10px;
+    margin-left: 2px;
+    border: none;
+    border-radius: 25px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #777;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+main {
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .reviews-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feature{
+    background: #6e6c6c;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+ .review {
+    background: #6e6c6c;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    
+}
+
+.review p {
+    margin: 10px 0;
+    color: gold;
+    text-align: left;
+}
+
+.review h3 {
+   
+    text-align:center;
+     color: white;
+ }
+
+ .review a {
+   
+   text-align: end;
+    color: gold;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer input, footer textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+footer button:hover {
+    background: #777;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .burger {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .reviews-container{
+        display: flex;
+    }
+}
