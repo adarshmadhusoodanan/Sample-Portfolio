@@ -1,0 +1,134 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+section{
+    padding:2rem 9% ;
+}
+
+/* header */
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+    background: rgb(66, 66, 66);
+ 
+
+
+}
+
+
+
+.header .navbar #close{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #fff;
+
+
+}
+
+
+.header .navbar a{
+   
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+
+}
+
+.header .navbar a:hover{
+    color:aquamarine ;
+}
+
+.header #menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+    
+
+
+}
+
+/* end */
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh ;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5em;
+
+}
+
+.home .content .title{
+    font-size: 6rem;
+    color: #444444;
+    text-transform: none;
+}
+
+.home .content .title span{
+    text-transform:none;
+    color: #000000;
+
+}
+
+.home .content .description{
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: right;
+    line-height: 1.8;
+    padding-right: 9rem ;
+    color: #444444;
+    
+}
+
+
+
+
+.home .image{
+    flex: 1 1 1rem;
+    
+
+}
+
+.home .image img{
+    width: 80%;
+
+}
+
+/* end */
