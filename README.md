@@ -1,2 +1,2 @@
 # Portfolio Website
-[portfolio](https://adarshmadhusoodanan.github.io/PRODIGY_WD_04/)
+[portfolio](https://adarshmadhusoodanan.github.io/Sample-Portfolio/)
